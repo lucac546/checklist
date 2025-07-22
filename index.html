@@ -3,89 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandaka Container</title> <!-- Alterado para "Mandaka Container" -->
+    <title>Mandaka Container</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Nome da empresa na parte superior -->
-    <h1>Mandaka Container</h1> <!-- Mantido apenas o nome do projeto uma vez, centralizado -->
+    <!-- Botão para alternar o tema -->
+    <button id="theme-toggle" class="theme-toggle-btn">Alternar Tema</button>
 
-    <form id="checklist-form">
-        <section>
-            <h2>Abertura do Restaurante</h2>
-            <label>
-                Entrada e fachada limpas?
-                <div class="radio-options">
-                    <input type="radio" name="entrada_limpas" value="Sim" /> Sim
-                    <input type="radio" name="entrada_limpas" value="Não" /> Não
-                </div>
-            </label>
-            <label>
-                Equipamentos funcionando?
-                <div class="radio-options">
-                    <input type="radio" name="equipamentos_funcionando" value="Sim" /> Sim
-                    <input type="radio" name="equipamentos_funcionando" value="Não" /> Não
-                </div>
-            </label>
-        </section>
+    <!-- Nome da empresa -->
+    <header>
+        <h1>Mandaka Container</h1>
+    </header>
 
-        <section>
-            <h2>Cozinha</h2>
-            <label>
-                Equipamentos de cozinha funcionando?
-                <div class="radio-options">
-                    <input type="radio" name="equipamentos_cozinha" value="Sim" /> Sim
-                    <input type="radio" name="equipamentos_cozinha" value="Não" /> Não
-                </div>
-            </label>
-            <label>
-                Ingredientes do dia disponíveis?
-                <div class="radio-options">
-                    <input type="radio" name="estoque_ingredientes" value="Sim" /> Sim
-                    <input type="radio" name="estoque_ingredientes" value="Não" /> Não
-                </div>
-            </label>
-        </section>
+    <main>
+        <form id="checklist-form">
+            <section>
+                <h2>Abertura do Restaurante</h2>
+                <label>
+                    Entrada e fachada limpas?
+                    <div class="radio-options">
+                        <input type="radio" name="entrada_limpas" value="Sim" /> Sim
+                        <input type="radio" name="entrada_limpas" value="Não" /> Não
+                    </div>
+                </label>
+                <label>
+                    Equipamentos funcionando?
+                    <div class="radio-options">
+                        <input type="radio" name="equipamentos_funcionando" value="Sim" /> Sim
+                        <input type="radio" name="equipamentos_funcionando" value="Não" /> Não
+                    </div>
+                </label>
+            </section>
 
-        <section>
-            <h2>Atendimento ao Cliente</h2>
-            <label>
-                Reservas confirmadas?
-                <div class="radio-options">
-                    <input type="radio" name="reservas_confirmadas" value="Sim" /> Sim
-                    <input type="radio" name="reservas_confirmadas" value="Não" /> Não
-                </div>
-            </label>
-            <label>
-                Mesas organizadas corretamente?
-                <div class="radio-options">
-                    <input type="radio" name="mesas_organizacao" value="Sim" /> Sim
-                    <input type="radio" name="mesas_organizacao" value="Não" /> Não
-                </div>
-            </label>
-        </section>
+            <section>
+                <h2>Cozinha</h2>
+                <label>
+                    Equipamentos de cozinha funcionando?
+                    <div class="radio-options">
+                        <input type="radio" name="equipamentos_cozinha" value="Sim" /> Sim
+                        <input type="radio" name="equipamentos_cozinha" value="Não" /> Não
+                    </div>
+                </label>
+                <label>
+                    Ingredientes do dia disponíveis?
+                    <div class="radio-options">
+                        <input type="radio" name="estoque_ingredientes" value="Sim" /> Sim
+                        <input type="radio" name="estoque_ingredientes" value="Não" /> Não
+                    </div>
+                </label>
+            </section>
 
-        <section>
-            <h2>Fechamento</h2>
-            <label>
-                Estoque de alimentos foi verificado?
-                <div class="radio-options">
-                    <input type="radio" name="estoque_verificado" value="Sim" /> Sim
-                    <input type="radio" name="estoque_verificado" value="Não" /> Não
-                </div>
-            </label>
-            <label>
-                Equipamentos desligados corretamente?
-                <div class="radio-options">
-                    <input type="radio" name="equipamentos_desligados" value="Sim" /> Sim
-                    <input type="radio" name="equipamentos_desligados" value="Não" /> Não
-                </div>
-            </label>
-        </section>
+            <section>
+                <h2>Atendimento ao Cliente</h2>
+                <label>
+                    Reservas confirmadas?
+                    <div class="radio-options">
+                        <input type="radio" name="reservas_confirmadas" value="Sim" /> Sim
+                        <input type="radio" name="reservas_confirmadas" value="Não" /> Não
+                    </div>
+                </label>
+                <label>
+                    Mesas organizadas corretamente?
+                    <div class="radio-options">
+                        <input type="radio" name="mesas_organizacao" value="Sim" /> Sim
+                        <input type="radio" name="mesas_organizacao" value="Não" /> Não
+                    </div>
+                </label>
+            </section>
 
-        <button type="submit">Salvar Checklist</button>
-        <button type="button" id="clear-checklist">Limpar Checklist</button>
-    </form>
+            <section>
+                <h2>Fechamento</h2>
+                <label>
+                    Estoque de alimentos foi verificado?
+                    <div class="radio-options">
+                        <input type="radio" name="estoque_verificado" value="Sim" /> Sim
+                        <input type="radio" name="estoque_verificado" value="Não" /> Não
+                    </div>
+                </label>
+                <label>
+                    Equipamentos desligados corretamente?
+                    <div class="radio-options">
+                        <input type="radio" name="equipamentos_desligados" value="Sim" /> Sim
+                        <input type="radio" name="equipamentos_desligados" value="Não" /> Não
+                    </div>
+                </label>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit">Salvar Checklist</button>
+                <button type="button" id="clear-checklist">Limpar Checklist</button>
+            </div>
+        </form>
+    </main>
 
     <script src="script.js"></script>
 </body>

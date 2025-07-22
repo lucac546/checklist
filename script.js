@@ -31,3 +31,10 @@ document.getElementById('clear-checklist').addEventListener('click', function() 
     // Exibir mensagem de confirmação
     alert('Checklist limpo!');
 });
+// Seleciona o botão de alternância de tema
+const themeToggleButton = document.getElementById('theme-toggle');
+
+// Verifica o estado atual do tema e alterna
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
