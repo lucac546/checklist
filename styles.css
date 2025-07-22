@@ -9,41 +9,33 @@ body {
     align-items: flex-start; /* Alinhamento no topo */
     height: 100vh;
     flex-direction: column;
-    padding-top: 20px; /* Espaço no topo */
+    padding-top: 20px; /* Menos espaço no topo */
 }
 
 /* Nome da empresa (Mandaka Container) */
-h2 {
-    text-align: center;
-    font-size: 2rem;  /* Tamanho do nome da empresa */
-    color: #4CAF50; /* Cor verde suave */
-    margin-bottom: 10px;
-}
-
-/* Cabeçalho - Centralizado */
 h1 {
-    text-align: center;
-    font-size: 2.5rem;  /* Tamanho maior para o título */
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 20px; /* Distância entre o título e o formulário */
+    text-align: center;  /* Centraliza o título */
+    font-size: 2.5rem;  /* Tamanho do título */
+    color: #4CAF50; /* Cor verde suave */
+    margin-bottom: 20px;  /* Distância abaixo do título */
 }
 
 /* Formulário */
 form {
     background-color: #fff;
-    padding: 30px 40px;
+    padding: 20px 30px;  /* Menos padding em telas pequenas */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
-    margin-bottom: 20px; /* Espaço no final do formulário */
+    margin-bottom: 20px;
+    overflow-y: auto; /* Evita que o conteúdo ultrapasse */
 }
 
 /* Títulos de seção */
 h2 {
     font-size: 1.2rem;
-    color: #4CAF50; /* Cor verde suave */
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
@@ -64,20 +56,28 @@ label {
 /* Organiza "Sim" e "Não" ao lado da frase */
 .radio-options {
     display: flex;
-    gap: 10px; /* Espaçamento entre as opções */
-    align-items: center; /* Alinha verticalmente no meio */
+    gap: 15px; /* Aumentei o espaçamento entre as opções */
+    justify-content: flex-start;
+    align-items: center;
 }
 
+/* Melhorando a interação com os botões e inputs */
 input[type="radio"] {
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #4CAF50;
+    border-radius: 50%;
 }
 
 /* Botões */
 button {
     width: 100%;
     padding: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 8px;
     border: none;
@@ -112,12 +112,6 @@ form:hover {
     transform: none;  /* Removendo a animação que aumenta o tamanho do formulário */
 }
 
-/* Estilo para o botão de desmarcar */
-input[type="radio"]:checked {
-    background-color: #4CAF50;
-    border-radius: 5px;
-}
-
 /* Responsividade: Ajustes para telas pequenas (celulares e tablets) */
 @media (max-width: 768px) {
     body {
@@ -141,6 +135,10 @@ input[type="radio"]:checked {
         font-size: 0.9rem; /* Tamanho do botão menor em telas pequenas */
         padding: 10px; /* Menor padding nos botões em telas pequenas */
     }
+
+    .radio-options {
+        gap: 20px; /* Mais espaço entre as opções em telas menores */
+    }
 }
 
 @media (max-width: 480px) {
@@ -160,5 +158,9 @@ input[type="radio"]:checked {
     button {
         font-size: 0.8rem; /* Botões menores em telas muito pequenas */
         padding: 8px; /* Ajuste do padding para botões */
+    }
+
+    .radio-options {
+        gap: 15px; /* Ajustando o espaçamento entre as opções para telas pequenas */
     }
 }
