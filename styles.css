@@ -1,0 +1,164 @@
+/* Cor de fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fundo mais suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhamento no topo */
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 20px; /* Espaço no topo */
+}
+
+/* Nome da empresa (Mandaka Container) */
+h2 {
+    text-align: center;
+    font-size: 2rem;  /* Tamanho do nome da empresa */
+    color: #4CAF50; /* Cor verde suave */
+    margin-bottom: 10px;
+}
+
+/* Cabeçalho - Centralizado */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;  /* Tamanho maior para o título */
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px; /* Distância entre o título e o formulário */
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px; /* Espaço no final do formulário */
+}
+
+/* Títulos de seção */
+h2 {
+    font-size: 1.2rem;
+    color: #4CAF50; /* Cor verde suave */
+    margin-bottom: 10px;
+}
+
+/* Espaçamento entre os itens */
+section {
+    margin-bottom: 25px;
+}
+
+/* Estilo para os labels e inputs */
+label {
+    font-size: 1rem;
+    display: block;
+    color: #555;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+/* Organiza "Sim" e "Não" ao lado da frase */
+.radio-options {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as opções */
+    align-items: center; /* Alinha verticalmente no meio */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão de "Salvar Checklist" */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor mais escura quando passa o mouse */
+}
+
+/* Estilo para o botão de "Limpar Checklist" */
+#clear-checklist {
+    background-color: #f44336;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#clear-checklist:hover {
+    background-color: #e53935; /* Cor mais escura quando passa o mouse */
+}
+
+/* Removendo a animação de hover do formulário */
+form:hover {
+    transform: none;  /* Removendo a animação que aumenta o tamanho do formulário */
+}
+
+/* Estilo para o botão de desmarcar */
+input[type="radio"]:checked {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Responsividade: Ajustes para telas pequenas (celulares e tablets) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 10px; /* Menos espaço no topo em telas pequenas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamanho do título menor em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Tamanho do nome da empresa menor em telas pequenas */
+    }
+
+    form {
+        padding: 20px; /* Menos padding em telas pequenas */
+        width: 90%; /* O formulário ocupa 90% da largura da tela */
+    }
+
+    button {
+        font-size: 0.9rem; /* Tamanho do botão menor em telas pequenas */
+        padding: 10px; /* Menor padding nos botões em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Título ainda menor em dispositivos muito pequenos */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Nome da empresa também menor */
+    }
+
+    form {
+        padding: 15px; /* Menor padding em telas muito pequenas */
+        width: 95%; /* O formulário ocupa 95% da largura da tela */
+    }
+
+    button {
+        font-size: 0.8rem; /* Botões menores em telas muito pequenas */
+        padding: 8px; /* Ajuste do padding para botões */
+    }
+}

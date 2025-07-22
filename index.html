@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Diário - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nome da empresa na parte superior -->
+    <h2>Mandaka Container</h2>
+
+    <!-- Título do checklist -->
+    <h1>Checklist Diário - Restaurante</h1>
+
+    <form id="checklist-form">
+        <section>
+            <h2>Abertura do Restaurante</h2>
+            <label>
+                Entrada e fachada limpas?
+                <input type="radio" name="entrada_limpas" value="Sim" /> Sim
+                <input type="radio" name="entrada_limpas" value="Não" /> Não
+            </label>
+            <label>
+                Equipamentos funcionando?
+                <input type="radio" name="equipamentos_funcionando" value="Sim" /> Sim
+                <input type="radio" name="equipamentos_funcionando" value="Não" /> Não
+            </label>
+        </section>
+
+        <section>
+            <h2>Cozinha</h2>
+            <label>
+                Equipamentos de cozinha funcionando?
+                <input type="radio" name="equipamentos_cozinha" value="Sim" /> Sim
+                <input type="radio" name="equipamentos_cozinha" value="Não" /> Não
+            </label>
+            <label>
+                Ingredientes do dia disponíveis?
+                <input type="radio" name="estoque_ingredientes" value="Sim" /> Sim
+                <input type="radio" name="estoque_ingredientes" value="Não" /> Não
+            </label>
+        </section>
+
+        <section>
+            <h2>Atendimento ao Cliente</h2>
+            <label>
+                Reservas confirmadas?
+                <input type="radio" name="reservas_confirmadas" value="Sim" /> Sim
+                <input type="radio" name="reservas_confirmadas" value="Não" /> Não
+            </label>
+            <label>
+                Mesas organizadas corretamente?
+                <input type="radio" name="mesas_organizacao" value="Sim" /> Sim
+                <input type="radio" name="mesas_organizacao" value="Não" /> Não
+            </label>
+        </section>
+
+        <section>
+            <h2>Fechamento</h2>
+            <label>
+                Estoque de alimentos foi verificado?
+                <input type="radio" name="estoque_verificado" value="Sim" /> Sim
+                <input type="radio" name="estoque_verificado" value="Não" /> Não
+            </label>
+            <label>
+                Equipamentos desligados corretamente?
+                <input type="radio" name="equipamentos_desligados" value="Sim" /> Sim
+                <input type="radio" name="equipamentos_desligados" value="Não" /> Não
+            </label>
+        </section>
+
+        <button type="submit">Salvar Checklist</button>
+        <button type="button" id="clear-checklist">Limpar Checklist</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
